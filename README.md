@@ -83,11 +83,11 @@ cd sendmate
 ### 2. Set up the backend
 
 ```bash
-cd server
+cd backend
 npm install
 ```
 
-**Create a `.env` file in `/server`:**
+**Create a `.env` file in `/backend`:**
 
 ```
 JWT_SECRET=your_jwt_secret
@@ -106,7 +106,7 @@ npm run dev
 ### 3. Set up the frontend
 
 ```bash
-cd client
+cd frontend
 npm install
 npm run dev
 ```
@@ -152,11 +152,6 @@ npm run dev
 
 ---
 
-## 🧑‍💻 Author
-
-Made with 💙 by [Your Name](https://github.com/your-username)
-
----
 
 ## 📜 License
 
