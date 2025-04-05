@@ -30,7 +30,7 @@ SendMate is a full-stack money transfer app where users can sign up, log in, vie
 ```
 sendmate/
 │
-├── client/                     # React frontend
+├── frontend/                     # React frontend
 │   ├── components/             # Reusable UI components
 │   │   ├── bottom_warning.tsx
 │   │   ├── button.tsx
@@ -50,7 +50,7 @@ sendmate/
 │   ├── App.tsx
 │   └── main.tsx
 │
-├── server/                     # Express backend
+├── backend/src/                     # Express backend
 │   ├── routes/
 │   │   ├── user.ts             # Signup, Signin, Get users
 │   │   └── account.ts          # Get balance, Transfer money
@@ -58,10 +58,7 @@ sendmate/
 │   ├── middleware/
 │   │   └── auth.ts             # JWT auth middleware
 │   │
-│   ├── models/
-│   │   ├── User.ts
-│   │   └── Account.ts
-│   │
+│   ├── db.ts
 │   ├── config.ts
 │   ├── index.ts                # App entry point
 │   └── .env
@@ -132,11 +129,16 @@ npm run dev
 ## 🖼️ UI Screens
 
 - ✅ Sign Up
+![image](https://github.com/user-attachments/assets/ebea4111-214d-4ec5-8984-36bff3524db2)
 - ✅ Sign In
-- ✅ Dashboard with Balance and User List
-- ✅ Search + Send Money Page
+![image](https://github.com/user-attachments/assets/44a5ac7c-c579-49d9-9609-5668062a2f72)
 
-*(You can add screenshots here)*
+- ✅ Dashboard with Balance and User List
+![image](https://github.com/user-attachments/assets/6aa4cda6-9e72-468c-9af9-1b644798e263)
+- ✅ Search + Send Money Page
+![image](https://github.com/user-attachments/assets/4cc52cc8-28e3-4017-936c-afe140c1c545)
+![image](https://github.com/user-attachments/assets/df2b8734-595e-41d7-a5fb-0984a817aba2)
+
 
 ---
 
