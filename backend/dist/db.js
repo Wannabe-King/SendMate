@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.accountModel = exports.UserModel = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 require("dotenv/config");
-mongoose_1.default.connect(process.env.MONGO_URL);
+mongoose_1.default.connect(process.env.MONGO_URI);
 const userSchema = new mongoose_1.default.Schema({
     username: {
         type: String,

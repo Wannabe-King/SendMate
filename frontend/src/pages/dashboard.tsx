@@ -80,7 +80,11 @@ export const Dashboard = () => {
           />
           {users.map((user) =>
             user.firstName != username ? (
-              <FriendTile username={user.firstName} userId={user._id} />
+              <FriendTile
+                key={user._id}
+                username={user.firstName}
+                userId={user._id}
+              />
             ) : null
           )}
         </div>

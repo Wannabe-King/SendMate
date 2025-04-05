@@ -5,7 +5,6 @@ import { Heading } from "../components/heading";
 import { UserIcon } from "../components/userIcon";
 import axios, { AxiosRequestConfig } from "axios";
 import { useSearchParams } from "react-router";
-import { Redirect } from "./redirect";
 
 export const SendMoney = () => {
   const [searchParams] = useSearchParams();
@@ -17,7 +16,6 @@ export const SendMoney = () => {
   };
   return (
     <div className="w-screen h-screen flex justify-center items-center shadow-md ">
-      <Redirect />
       <div className="w-sm bg-white rounded-md text-black p-5">
         <Heading lable="Send Money" />
         <div className="flex items-center mt-5">
