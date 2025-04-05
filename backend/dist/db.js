@@ -5,7 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.accountModel = exports.UserModel = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
-mongoose_1.default.connect("mongodb+srv://Priyanshu:8mlusbSfM9HCYypP@cluster0.n6mb2.mongodb.net/Paytm");
+require("dotenv/config");
+mongoose_1.default.connect(process.env.MONGO_URL);
 const userSchema = new mongoose_1.default.Schema({
     username: {
         type: String,
